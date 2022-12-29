@@ -1,0 +1,22 @@
+@use 'sass:math';
+
+.p-mainvisual {
+	&__typos {
+		position: relative;
+		&__item {
+			position: absolute;
+			&:first-child {
+				top: 100px;
+				left: 10vw;
+			}
+			&:nth-child( 2 ) {
+				top: 200px;
+				right: 10vw;
+			}
+			&:last-child {
+				top: 300px;
+				left: 10vw;
+			}
+		}
+	}
+}

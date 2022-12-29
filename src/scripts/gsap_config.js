@@ -1,18 +1,30 @@
-import gsap from 'gsap'
+import gsap from 'gsap';
 
 export function gsapConfig( element ) {
-	const right = gsap.timeline();
-	right.to(
-		element,
+	gsap.timeline()
+	.to(
+		'.js-typography-1',
 		{
-			x: 400,
-		}
+			x: "10vw",
+			duration: .7,
+			ease: "power3.out",
+			delay: .5
+		},
 	)
 	.to(
-		element,
+		'.js-typography-2',
 		{
-			y: 400
+			x: "-10vw",
+			duration: .7
 		},
-		1
+		'-=0.7'
+	)
+	.to(
+		'.js-typography-3',
+		{
+			x: "10vw",
+			duration: .7
+		},
+		'-=0.5'
 	);
 }
