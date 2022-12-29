@@ -8,14 +8,17 @@
 			&:first-child {
 				top: 100px;
 				left: 10vw;
+				opacity: 0;
 			}
 			&:nth-child( 2 ) {
 				top: 200px;
 				right: 10vw;
+				opacity: 0;
 			}
 			&:last-child {
 				top: 300px;
 				left: 10vw;
+				opacity: 0;
 			}
 		}
 	}
