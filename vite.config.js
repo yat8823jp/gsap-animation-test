@@ -1,5 +1,4 @@
 import { defineConfig } from "vite";
-// import postcss from "postcss";
 import tailwindcss from "tailwindcss";
 import autoprefixer from "autoprefixer";
 import postcssNesting from "postcss-nesting";
