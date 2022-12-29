@@ -1,4 +1,4 @@
-import '../styles/main.scss'
+import '../styles/main.css'
 import javascriptLogo from '../../img/javaScript.svg'
 import { setupCounter } from '../../lib/main.js'
 import { gsapConfig } from './gsap_config'
