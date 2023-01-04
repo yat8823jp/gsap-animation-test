@@ -54,3 +54,27 @@ export function SlideIn( element ) {
 		}
 	);
 }
+
+export function imgRight( element ) {
+	gsap.timeline()
+	.from( '.js-imgright', {
+		width: 0,
+		x: '100%',
+		scrollTrigger: {
+			trigger: '.js-imgright',
+			start: 'top bottom',
+			end: 'top top',
+			toggleActions: 'play none none reverse',
+			scrub: 2
+		}
+	} )
+	.to( '.js-imgright-img', {
+		y: '100%',
+		scrollTrigger: {
+			trigger: '.js-imgright',
+			start: 'top top',
+			toggleActions: 'play none none reverse',
+			scrub: 2,
+		}
+	}, '<' );
+}
